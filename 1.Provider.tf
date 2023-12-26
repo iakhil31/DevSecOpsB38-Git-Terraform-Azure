@@ -16,6 +16,12 @@ terraform {
     }
 
   }
+  backend "azurerm" {
+    resource_group_name  = "COMMON-RG"
+    storage_account_name = "devsecopsb38tfstate9"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
+  }
 }
 
 
