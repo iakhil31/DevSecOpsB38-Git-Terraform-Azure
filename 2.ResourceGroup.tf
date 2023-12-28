@@ -1,8 +1,10 @@
+
+
 resource "azurerm_resource_group" "megastar-rg1" {
-  name     = "megastar-rg1"
-  location = "eastus"
+  name     = var.rg_name
+  location = var.rg_name_location
   tags = {
-    export = "Development"
+    export = var.rg_export
   }
 }
 
