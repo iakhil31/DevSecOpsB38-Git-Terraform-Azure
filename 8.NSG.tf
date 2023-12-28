@@ -4,8 +4,8 @@ resource "azurerm_network_security_group" "nsg1" {
   resource_group_name = azurerm_resource_group.megastar-rg1.name
   tags = {
     export = "Development"
-costCenter = "8080"
-Owner = "JavaAppTeam"
-EndData = "Jan 24 2023"
+    costCenter = "80801"
+    Owner = "JavaAppTeam1"
+    EndData = "Jan 24 20231"
   }
 }
