@@ -52,3 +52,4 @@ resource "random_password" "password5" {
   override_special = "!#*?"
   depends_on       = [random_password.password4]
 }
+}
