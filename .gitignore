@@ -6,3 +6,4 @@ creds.md
 .DS_Store
 .terraform.lock.hcl
 terraform/
+7.KV-Passwords.tf

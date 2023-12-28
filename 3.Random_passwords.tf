@@ -6,7 +6,7 @@ resource "random_password" "password1" {
   min_special      = 4
   special          = true
   override_special = "!#*?"
-  depends_on = [azurerm_subnet.subnet3]
+  depends_on       = [azurerm_subnet.subnet3]
 }
 
 resource "random_password" "password2" {
@@ -17,7 +17,7 @@ resource "random_password" "password2" {
   min_special      = 4
   special          = true
   override_special = "!#*?"
- depends_on = [random_password.password1] 
+  depends_on       = [random_password.password1]
 }
 
 resource "random_password" "password3" {
@@ -28,7 +28,7 @@ resource "random_password" "password3" {
   min_special      = 4
   special          = true
   override_special = "!#*?"
-  depends_on = [random_password.password1]
+  depends_on       = [random_password.password1]
 }
 
 resource "random_password" "password4" {
@@ -39,7 +39,7 @@ resource "random_password" "password4" {
   min_special      = 4
   special          = true
   override_special = "!#*?"
-  depends_on = [random_password.password3]
+  depends_on       = [random_password.password3]
 }
 
 resource "random_password" "password5" {
@@ -50,5 +50,5 @@ resource "random_password" "password5" {
   min_special      = 4
   special          = true
   override_special = "!#*?"
-  depends_on = [random_password.password4]
+  depends_on       = [random_password.password4]
 }
