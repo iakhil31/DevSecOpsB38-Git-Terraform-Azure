@@ -971,7 +971,11 @@ resource "random_password" "password1" {
   min_special      = 4
   special          = true
   override_special = "!#*?"
+<<<<<<< HEAD
   depends_on       = [azurerm_subnet.subnet3]
+=======
+  depends_on       = [random_password.password1]
+>>>>>>> 3fa1d833255c3944ff450b33f300310713d05516
 }
 
 resource "random_password" "password2" {
@@ -982,7 +986,11 @@ resource "random_password" "password2" {
   min_special      = 4
   special          = true
   override_special = "!#*?"
+<<<<<<< HEAD
   depends_on       = [random_password.password1]
+=======
+  depends_on       = [random_password.password3]
+>>>>>>> 3fa1d833255c3944ff450b33f300310713d05516
 }
 
 resource "random_password" "password3" {
@@ -990,4 +998,13 @@ resource "random_password" "password3" {
   min_lower        = 4
   min_upper        = 4
   min_numeric      = 4
+<<<<<<< HEAD
 -- INSERT --                                                                                         1,1           Top}
+=======
+  min_special      = 4
+  special          = true
+  override_special = "!#*?"
+  depends_on       = [random_password.password4]
+}
+}
+>>>>>>> 3fa1d833255c3944ff450b33f300310713d05516
